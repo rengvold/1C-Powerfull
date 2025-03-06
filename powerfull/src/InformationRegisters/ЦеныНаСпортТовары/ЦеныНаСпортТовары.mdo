@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a732683c-07c0-4a01-99e5-fc4dac03b71a">
+  <producedTypes>
+    <selectionType typeId="51f47221-d5cc-485b-a2d8-4695323c5cb0" valueTypeId="552cd515-f048-414c-a53a-73554113c967"/>
+    <listType typeId="caf7f45f-939a-4532-8cd4-4942a8b34fc9" valueTypeId="43a8bb5c-d95f-4e7d-b938-e18cab4fc2a8"/>
+    <managerType typeId="cece587e-2c98-47ed-8e4b-dd96140e9487" valueTypeId="9b18aaeb-062b-4c13-a5c5-68dac49e6ece"/>
+    <recordSetType typeId="e04f6cd9-da01-43d3-bb71-2a798e49d315" valueTypeId="8ff4cd9d-7b80-4688-b8e5-2beea60c2016"/>
+    <recordKeyType typeId="c6dd40fd-4796-471d-9e54-3bbf85c6dc29" valueTypeId="83e2f85e-d81b-4072-9410-f1f385afcc3f"/>
+    <recordType typeId="cabab6d8-d1cc-4ae9-9c7e-ee38d3f84711" valueTypeId="ee911617-09fe-46ff-a84d-2b4057f6c550"/>
+    <recordManagerType typeId="b69055e6-ecf9-422b-8dd9-ec3866a13bff" valueTypeId="7023f0da-cf8b-4709-a6f0-9e54c4c6a8f0"/>
+  </producedTypes>
+  <name>ЦеныНаСпортТовары</name>
+  <synonym>
+    <key>ru</key>
+    <value>Цены на спорт товары</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.ЦеныНаСпортТовары.Form.ФормаЗаписи</defaultRecordForm>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Цена</value>
+  </recordPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Цены товаров</value>
+  </listPresentation>
+  <resources uuid="06e32a1b-5845-4ec3-812c-4c97ff88720d">
+    <name>Цена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Цена</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="4d61cde3-9371-40e6-8647-ee5abeb69728">
+    <name>Товар</name>
+    <synonym>
+      <key>ru</key>
+      <value>Товар</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Товары</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="abca9b5e-a687-4e60-8160-51a822c20451">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

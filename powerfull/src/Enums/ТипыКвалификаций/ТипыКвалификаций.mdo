@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8eb8ec21-7d6f-43a4-8126-cde45271c428">
+  <producedTypes>
+    <refType typeId="ddd1c894-c6ce-46af-ae87-ca2735790835" valueTypeId="b2e0adef-9ef9-443c-9bef-63559e688f9a"/>
+    <listType typeId="45802b19-f0a6-4227-b863-e4e21a910c8d" valueTypeId="8886c7bf-3732-4963-89ba-07222d34d3b7"/>
+    <managerType typeId="ef6e3627-437e-4959-bc6c-873d9c6fd872" valueTypeId="1c2aa65f-aad5-48b5-8089-aa5fcdfb12de"/>
+  </producedTypes>
+  <name>ТипыКвалификаций</name>
+  <synonym>
+    <key>ru</key>
+    <value>Типы квалификаций</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="0b9f1ad5-514f-4246-bbe4-c989a44c3ed5">
+    <name>Бакалавр</name>
+    <synonym>
+      <key>ru</key>
+      <value>Бакалавр</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="cd1ddbbe-8b84-4e33-ba36-eb473f0fd4c0">
+    <name>Специалист</name>
+    <synonym>
+      <key>ru</key>
+      <value>Специалист</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="827980fb-96ad-41c2-bebe-8e258a6351e2">
+    <name>Магистр</name>
+    <synonym>
+      <key>ru</key>
+      <value>Магистр</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="7f9daa95-6938-461c-a732-16d83ebaa65d">
+    <name>ТренерВторойКатегории</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тренер второй категории</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="8af6be7d-f8c1-46a8-9fd2-43130e5eb33d">
+    <name>ТренерПервойКатегории</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тренер первой категории</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="4d924557-1211-4404-8246-cfdceefb0b24">
+    <name>ТренерВысшейКатегории</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тренер высшей категории</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

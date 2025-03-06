@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="84a138ba-4b12-4e58-beed-438348d29916">
+  <name>ТорговыеДокументы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Торговые документы</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>DocumentJournal.УчетУслугИАбонементов</content>
+  <parentSubsystem>Subsystem.ПродажиАбонементов</parentSubsystem>
+</mdclass:Subsystem>

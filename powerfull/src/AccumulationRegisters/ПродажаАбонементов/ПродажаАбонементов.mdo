@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cb580ecf-351c-49a9-ad3c-d2110b4b7517">
+  <producedTypes>
+    <selectionType typeId="a6d46aa7-49a6-4765-b429-502ee5422eb5" valueTypeId="12607f17-c19d-4895-9d1c-92aaa8effcf3"/>
+    <listType typeId="97fc3f2b-e2ae-4d9d-add8-466577a8d462" valueTypeId="2bb6bb08-795a-4328-9401-4d4b9bf6f635"/>
+    <managerType typeId="a764713b-1487-4eb7-b158-11f425d70dfb" valueTypeId="410238be-b7f9-49d7-a453-8a7b468f0b8c"/>
+    <recordSetType typeId="63408fc0-d789-4893-8fae-463220681e7b" valueTypeId="d4dcac57-0579-4428-8e48-6829da7c6d51"/>
+    <recordKeyType typeId="cd52c800-a983-43d3-8934-ed09fbccdb05" valueTypeId="53893a8b-9903-418c-8db9-9c7d0a071359"/>
+    <recordType typeId="c969db99-535f-411b-bc11-b247ee442623" valueTypeId="43751597-ef66-4919-b5a9-764ca295cc43"/>
+  </producedTypes>
+  <name>ПродажаАбонементов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Продажа абонементов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultListForm>AccumulationRegister.ПродажаАбонементов.Form.ФормаСписка</defaultListForm>
+  <registerType>Turnovers</registerType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="f3b7fc8f-936d-444f-a19f-816a75891bb4">
+    <name>Цена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Цена</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="28aa8712-5ade-4890-9150-3a291a43f1c4">
+    <name>Клиент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Клиент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Клиенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="3b8cb47e-2413-4817-a497-5e3db2711835">
+    <name>Абонемент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Абонемент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Абонементы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <forms uuid="a1818f4b-8a93-4e87-8ff4-b35368f4a46f">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:AccumulationRegister>

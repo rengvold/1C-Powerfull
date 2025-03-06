@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DocumentJournal xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="844342c3-2751-4fed-ad91-db48f37f8894">
+  <producedTypes>
+    <selectionType typeId="819cce12-0896-498c-83e7-f61ce355bf4f" valueTypeId="f05cde55-ba84-44bc-ac1b-654bb37dccff"/>
+    <listType typeId="e0ccbeba-aed4-4adf-b8b0-d33681fc7118" valueTypeId="125379bd-dd19-4d51-9917-335d48a501a1"/>
+    <managerType typeId="eaef3470-661e-48c7-a74d-610dabd3e38b" valueTypeId="539f6181-c89d-4d49-bca3-6715cbf9ed0e"/>
+  </producedTypes>
+  <name>УчетТоваров</name>
+  <synonym>
+    <key>ru</key>
+    <value>Учет товаров</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <registeredDocuments>Document.РеализацияТоваров</registeredDocuments>
+  <registeredDocuments>Document.ПоступлениеТоваров</registeredDocuments>
+  <columns uuid="283e3225-737d-434b-bf2f-17347e950bf1">
+    <name>СуммаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма документа</value>
+    </synonym>
+    <references>Document.РеализацияТоваров.Attribute.СуммаДокумента</references>
+    <references>Document.ПоступлениеТоваров.Attribute.СуммаДокумента</references>
+  </columns>
+</mdclass:DocumentJournal>

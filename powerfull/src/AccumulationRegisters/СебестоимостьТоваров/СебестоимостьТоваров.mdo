@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f8635eec-3de9-4249-a42b-2b24b0ad167e">
+  <producedTypes>
+    <selectionType typeId="aa76ec41-8b5d-40bb-80a9-6cd814fff30a" valueTypeId="476726b9-37e4-46a8-9e3c-31143cafdd2f"/>
+    <listType typeId="fb1f3e45-24f0-49c0-9fdb-7df2051ba59d" valueTypeId="42a51b70-e5a4-44b3-948f-5437acfae093"/>
+    <managerType typeId="1cd431e8-23d5-44c1-b9a5-7e37767e9cbf" valueTypeId="9d9ce32e-f037-4523-af28-70dd4fc7abac"/>
+    <recordSetType typeId="ab956308-0ac1-4366-9db0-dea470d49ccd" valueTypeId="4b997008-244f-47d5-8fe3-18dde3a166ed"/>
+    <recordKeyType typeId="897b0846-e3b0-492e-915a-17ee3c8e3083" valueTypeId="05807bc6-bc4f-42ff-9ff5-c2636d67fc21"/>
+    <recordType typeId="92babf87-a515-4ea6-bb39-3f8af8b1a653" valueTypeId="22b5b951-5332-4aab-91f0-5540b6c6b893"/>
+  </producedTypes>
+  <name>СебестоимостьТоваров</name>
+  <synonym>
+    <key>ru</key>
+    <value>Себестоимость товаров</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultListForm>AccumulationRegister.СебестоимостьТоваров.Form.ФормаСписка</defaultListForm>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="be2e8ed4-178f-4a1f-bcee-4ec8f2468432">
+    <name>Количество</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="7121a57b-7ed2-447d-9bd4-289773460537">
+    <name>Сумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="662657dd-7223-4820-9887-25a31140635e">
+    <name>Товар</name>
+    <synonym>
+      <key>ru</key>
+      <value>Товар</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Товары</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <forms uuid="626717cd-f39c-4b5a-a05b-9c5ea5d72441">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:AccumulationRegister>

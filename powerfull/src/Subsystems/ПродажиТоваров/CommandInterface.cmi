@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cmi:CommandInterface xmlns:cmi="http://g5.1c.ru/v8/dt/cmi">
+  <commandsVisibility>
+    <visibilityFragments>
+      <command>AccumulationRegister.СебестоимостьТоваров.StandardCommand.OpenList</command>
+      <visible>
+        <common>true</common>
+      </visible>
+    </visibilityFragments>
+  </commandsVisibility>
+  <commandsPlacement>
+    <placementFragments>
+      <group>NavigationPanelSeeAlso</group>
+      <commands>AccumulationRegister.СебестоимостьТоваров.StandardCommand.OpenList</commands>
+    </placementFragments>
+  </commandsPlacement>
+  <commandsOrder>
+    <orderFragments>
+      <group>NavigationPanelSeeAlso</group>
+      <commands>AccumulationRegister.СебестоимостьТоваров.StandardCommand.OpenList</commands>
+    </orderFragments>
+  </commandsOrder>
+  <subsystemsOrder>
+    <subsystems>Subsystem.ПродажиТоваров.Subsystem.Документы</subsystems>
+    <subsystems>Subsystem.ПродажиТоваров.Subsystem.НСИ</subsystems>
+    <subsystems>Subsystem.ПродажиТоваров.Subsystem.ТорговыеДокументы</subsystems>
+  </subsystemsOrder>
+</cmi:CommandInterface>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ExchangePlan xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="26d3a187-2aec-416f-9836-5c1dd9a7b145" thisNode="b3ac97d2-f54e-4d9a-96e0-924fe6c026c2">
+  <producedTypes>
+    <objectType typeId="e1f41442-195c-4461-b201-3cde2ce31351" valueTypeId="36753f51-35c8-436f-84ef-5448d5f8610f"/>
+    <refType typeId="06979d63-d012-40a6-aeee-6bd5a10eeaa7" valueTypeId="c6e74fcd-7036-4ba3-af7a-b9a7e6e337ca"/>
+    <selectionType typeId="93b7228a-c4e4-4af3-9eb9-2d5ca078eb2f" valueTypeId="00f0db9f-fe34-4a22-9669-a6a972bf8b92"/>
+    <listType typeId="0f7d5ccf-a05c-4997-b323-55d327086090" valueTypeId="19f776bb-fb3c-49b1-87c0-0026948bc386"/>
+    <managerType typeId="fea188ff-fad4-48d4-9755-5dbd68af5073" valueTypeId="2ab5b120-64b4-4bfe-8be5-c1e33f09f256"/>
+  </producedTypes>
+  <name>Мобильный</name>
+  <synonym>
+    <key>ru</key>
+    <value>Мобильный</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>ExchangePlan.Мобильный.StandardAttribute.Description</inputByString>
+  <inputByString>ExchangePlan.Мобильный.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>DontUse</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <codeLength>36</codeLength>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <descriptionLength>25</descriptionLength>
+  <content>
+    <mdObject>Document.РеализацияТоваров</mdObject>
+  </content>
+  <content>
+    <mdObject>Catalog.Товары</mdObject>
+    <autoRecord>Allow</autoRecord>
+  </content>
+  <content>
+    <mdObject>InformationRegister.ЦеныНаСпортТовары</mdObject>
+    <autoRecord>Allow</autoRecord>
+  </content>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:ExchangePlan>

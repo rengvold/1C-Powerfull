@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cb477448-08f2-474e-a213-2d4ab3223ff6">
+  <producedTypes>
+    <selectionType typeId="c579429c-1976-4f70-9d1c-1fce59c3118d" valueTypeId="5e957823-67f0-4532-80f6-600e0c594fe6"/>
+    <listType typeId="afc1f376-b7f4-4b8a-bb7c-d32eb7fddb99" valueTypeId="3383d2a1-7ea4-4ffb-8c02-327b6d2127ac"/>
+    <managerType typeId="b32f4ed7-003d-4322-82d3-43b8f03f5b20" valueTypeId="e0e631a8-b7d7-469f-b9b9-822a54a07634"/>
+    <recordSetType typeId="5d4abe6a-d211-46e0-b545-c1abbb49f20f" valueTypeId="16b9eea0-86bc-476b-9906-043b39a102a9"/>
+    <recordKeyType typeId="b51fd93c-c6a8-4e68-a64f-71e0410b4bea" valueTypeId="1053185b-72ec-4393-bc08-ebcc7640db82"/>
+    <recordType typeId="6dc28917-9cd8-4ccf-a41c-1d288788371b" valueTypeId="871b2051-74ca-4da3-aa85-6c92ecce5856"/>
+  </producedTypes>
+  <name>ДеньгиОтПродажиУслугИАбонементов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Деньги от продажи услуг и абонементов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultListForm>AccumulationRegister.ДеньгиОтПродажиУслугИАбонементов.Form.ФормаСписка</defaultListForm>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="1cfafcbb-1d53-4efa-92e6-5c8ec513a090">
+    <name>Сумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="02b7cdb5-fe8e-4ea1-b354-9ffa5944ebd9">
+    <name>ТипДенежныхСредств</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип денежных средств</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ТипДенежныхСредств</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <forms uuid="dbddad79-9cc5-4aaa-9d25-17e2b18685a4">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:AccumulationRegister>

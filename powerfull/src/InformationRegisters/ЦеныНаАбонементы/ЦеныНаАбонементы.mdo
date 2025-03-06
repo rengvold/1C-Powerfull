@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bb746f14-8933-4ceb-aee5-73b2ffb14a1a">
+  <producedTypes>
+    <selectionType typeId="e6003022-7b3e-46e3-8011-f171048a764a" valueTypeId="3776c375-94ad-42bf-aeb0-2f1d40410967"/>
+    <listType typeId="190cfef5-6194-4252-ba84-aa04aab9162a" valueTypeId="3a9894a9-204e-4188-a64a-19682bead85d"/>
+    <managerType typeId="cdf94a02-68ef-4e7a-b058-fce9203d7a60" valueTypeId="b76889eb-47f5-4ae3-bbcd-fe01a2afe280"/>
+    <recordSetType typeId="83f23ca5-657c-4436-981c-f2514714466f" valueTypeId="c1f0c966-a6af-4497-9080-970e429377e2"/>
+    <recordKeyType typeId="3311fe61-e157-444f-abea-b7d1f1c7cc50" valueTypeId="33cb8f0d-0221-42b9-a477-fcf7269dc1ca"/>
+    <recordType typeId="03f01872-1adf-4fde-9d8d-8c7cf891171f" valueTypeId="674fdbef-6b1e-4815-bfcf-961d6ba7cdb2"/>
+    <recordManagerType typeId="94aa973b-e4ea-4f3c-9886-225c4d1adef5" valueTypeId="a6f3db94-b4e4-46c8-8896-7d981f4a468b"/>
+  </producedTypes>
+  <name>ЦеныНаАбонементы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Цены на абонементы</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.ЦеныНаАбонементы.Form.ФормаЗаписи</defaultRecordForm>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Цена</value>
+  </recordPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Цены абониментов</value>
+  </listPresentation>
+  <resources uuid="20ec3b5e-f35c-41d8-99b1-82e2c1b9be37">
+    <name>Цена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Цена</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="ccb06138-27ac-410c-a564-c7d1a048b603">
+    <name>Абонемент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Абонемент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Абонементы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="c6cf5590-5ccc-4f74-81d0-3f54fe93265a">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

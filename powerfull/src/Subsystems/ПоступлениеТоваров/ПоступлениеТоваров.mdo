@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5a197c72-4147-44fe-9f23-af801cd0aaf9">
+  <name>ПоступлениеТоваров</name>
+  <synonym>
+    <key>ru</key>
+    <value>Поступление товаров</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.ПоступлениеТоваров</picture>
+  </picture>
+  <content>Report.ОстаткиНаСкладах</content>
+  <content>Report.ОтчетПоПоступлениям</content>
+  <content>AccumulationRegister.ОстаткиТоваров</content>
+  <content>InformationRegister.ИсторияПоставочныхЦен</content>
+  <subsystems>Документы</subsystems>
+  <subsystems>НСИ</subsystems>
+  <subsystems>ТорговыеДокументы</subsystems>
+</mdclass:Subsystem>

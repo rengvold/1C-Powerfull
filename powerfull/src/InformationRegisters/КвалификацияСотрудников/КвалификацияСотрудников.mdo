@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="181d4f9d-36ae-4600-a542-5dd0cfcfcbae">
+  <producedTypes>
+    <selectionType typeId="0852566f-25c4-4365-88a0-cf552afa074a" valueTypeId="46d8f687-cd78-4523-9d94-4db1d4a1e9ae"/>
+    <listType typeId="e31ca015-5515-4730-981e-12a9cd283225" valueTypeId="0ed5bd13-5c39-44ef-a11b-ae245e8d35d1"/>
+    <managerType typeId="41e377af-7da9-4181-ae83-2aed4cd8027e" valueTypeId="01c0286c-67fa-4b67-99f2-82e5a768e5c6"/>
+    <recordSetType typeId="a92f1797-c3ed-45c6-8ca7-0d7366be50c3" valueTypeId="d5393c47-d591-46fd-8cc7-8121ec1770a1"/>
+    <recordKeyType typeId="00690be1-c323-44e0-8b66-3161d83fc989" valueTypeId="2bfe9fb8-0fd7-42d2-ae2e-8f330a533da0"/>
+    <recordType typeId="f6bfb843-802c-412e-8735-5062d47908b0" valueTypeId="5aed9a24-8e1b-43be-8085-62378795f8ec"/>
+    <recordManagerType typeId="c514e600-dbab-439d-972a-881f90473e95" valueTypeId="58ac523d-db52-4d3e-9db7-d2b976970742"/>
+  </producedTypes>
+  <name>КвалификацияСотрудников</name>
+  <synonym>
+    <key>ru</key>
+    <value>Квалификация сотрудников</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.КвалификацияСотрудников.Form.ФормаЗаписи</defaultRecordForm>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Квалификация</value>
+  </recordPresentation>
+  <attributes uuid="3be0d7af-3224-4872-83aa-67da3b8891ea">
+    <name>ВидДеятельности</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид деятельности</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </attributes>
+  <attributes uuid="78b1bc52-f13e-43ce-984b-b24e2d229280">
+    <name>ОпытРаботы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Опыт работы</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </attributes>
+  <attributes uuid="63995640-a659-43c0-9529-01975f53a556">
+    <name>ДатаПолучения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата получения</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="fe423f26-b1e6-4e6a-b98f-dcaaaddb17a9">
+    <name>ВыдавшийОрган</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выдавший орган</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </attributes>
+  <dimensions uuid="90249dc0-50b6-4b7c-9383-6d1b1eb43162">
+    <name>Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="dd840c25-8280-47b8-9a75-308569e172d8">
+    <name>ТипКвалификации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип квалификации</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ТипыКвалификаций</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="65f5a029-d8d8-4af2-a22a-ae52acb2d33d">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

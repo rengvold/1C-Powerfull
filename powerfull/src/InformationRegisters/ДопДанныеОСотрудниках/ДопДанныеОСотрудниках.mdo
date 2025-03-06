@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a6a98a49-175f-44eb-8a99-53ee1c18e087">
+  <producedTypes>
+    <selectionType typeId="db45494b-c68e-4af2-8ba8-10c229419c0c" valueTypeId="f6573a0f-cb61-40c7-8f58-8e48a20b29a2"/>
+    <listType typeId="3eb6b34f-b61d-4f41-81a6-af879bcbe708" valueTypeId="38c28aff-739b-442f-8110-4104d691167c"/>
+    <managerType typeId="2253be52-90cd-4715-923a-1e0128c6e824" valueTypeId="d8ccc060-eda0-4c8f-afdf-ceca079cf44e"/>
+    <recordSetType typeId="32041d7c-456c-48a9-bcac-00de9202f4fd" valueTypeId="1b664778-4a03-44c9-8da7-65ae83216cac"/>
+    <recordKeyType typeId="97b6dca9-7d09-4fd2-bb22-b41a38818f42" valueTypeId="ccca309e-51b2-473b-b86e-65612069cc75"/>
+    <recordType typeId="865966e0-eee7-42d8-aa7f-26cf06baace6" valueTypeId="d27ba6c8-e770-4161-bfe9-7f7500e4260b"/>
+    <recordManagerType typeId="7f3a097a-daa0-444c-ae0a-c9e3d660deb2" valueTypeId="ec5a3512-e5ee-4511-91be-164c976865b2"/>
+  </producedTypes>
+  <name>ДопДанныеОСотрудниках</name>
+  <synonym>
+    <key>ru</key>
+    <value>Доп данные о сотрудниках</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.ДопДанныеОСотрудниках.Form.ФормаЗаписи</defaultRecordForm>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <attributes uuid="1a99c1d0-0a3c-4f1c-9aea-45d3821a0ff6">
+    <name>СерияПаспорта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Серия паспорта</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="3e79e351-ba3f-44a0-8c26-84b5dbd3389c">
+    <name>НомерПаспорта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер паспорта</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>15</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </attributes>
+  <attributes uuid="b6d7b39d-d180-47f3-a2d7-61fa614a085b">
+    <name>ДатаВыдачиПаспорта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата выдачи паспорта</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="808ca218-5211-4e8f-b252-73f1f6b2bb04">
+    <name>КемВыданПаспорт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Кем выдан паспорт</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </attributes>
+  <attributes uuid="89d09b93-66d0-450b-a125-13aceb9cd880">
+    <name>Гражданство</name>
+    <synonym>
+      <key>ru</key>
+      <value>Гражданство</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </attributes>
+  <attributes uuid="87964c22-aa22-4e26-bb0f-1756795e2c04">
+    <name>ИНН</name>
+    <synonym>
+      <key>ru</key>
+      <value>ИНН</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>12</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </attributes>
+  <attributes uuid="bd12f272-902f-4278-867f-fe13f3d04e68">
+    <name>СНИЛС</name>
+    <synonym>
+      <key>ru</key>
+      <value>СНИЛС</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>11</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </attributes>
+  <dimensions uuid="17d297b9-9969-4a2d-8251-922ea706d118">
+    <name>Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="174e0c84-d24b-4ad5-b29c-4a3c325f7cac">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ab0dd874-7ede-4ed9-966b-c4add0c05425">
+  <producedTypes>
+    <objectType typeId="854f820b-3465-4520-87b2-201c7301358f" valueTypeId="e4d2aa20-7773-4923-8bb9-48e4943b5f6d"/>
+    <refType typeId="171076bd-5825-4133-9a1b-06f8038d227e" valueTypeId="1ba75f9f-6aab-4c68-9ccf-94622daba732"/>
+    <selectionType typeId="46363c34-9a69-440e-b312-42e08b448c45" valueTypeId="687e87e8-4eaf-41af-ab6a-3923a7158013"/>
+    <listType typeId="bd6dc4c1-2b39-4105-a17c-05c14f136a7f" valueTypeId="b7d4e38c-f184-4178-b32b-f039802d0ba9"/>
+    <managerType typeId="6511effb-7396-4669-911b-dfea786fd721" valueTypeId="1fe9d04a-4ae5-43c4-b0e7-22fbada6d937"/>
+  </producedTypes>
+  <name>ПоставщикиТоваров</name>
+  <synonym>
+    <key>ru</key>
+    <value>Поставщики товаров</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ПоставщикиТоваров.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ПоставщикиТоваров.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Поставщик</value>
+  </objectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Поставщики</value>
+  </listPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.ПоставщикиТоваров.Form.ФормаЭлемента</defaultObjectForm>
+  <forms uuid="190b15c1-e18d-4d53-9840-0bb062ded2ba">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

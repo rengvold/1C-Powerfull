@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="670bbd59-c003-4b5d-98b1-9506c7a38b50">
+  <producedTypes>
+    <objectType typeId="fea8c02b-2a38-4b9a-abf2-5e345e76db7e" valueTypeId="cb844906-3c2d-4b06-83cf-9ae73e01514b"/>
+    <refType typeId="c8eea31f-80e9-4b3f-a2ee-77fd045729dd" valueTypeId="33c8b75e-6ce4-4151-aed0-c225ec202066"/>
+    <selectionType typeId="fc824e9d-15da-4ff6-a57f-93d6da63ac40" valueTypeId="f13b1556-e203-4ec5-b5d3-315ca48998fc"/>
+    <listType typeId="4cbf8591-7744-48da-88de-6ded8fdd4216" valueTypeId="089160ac-bf48-4836-a328-5e17f451fc8d"/>
+    <managerType typeId="a6e796fb-7b67-41d2-9ae0-3d9bd1ec1fae" valueTypeId="9370cee0-da60-45e4-a278-c2c1a21d929b"/>
+  </producedTypes>
+  <name>Абонементы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Абонементы</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Абонементы.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.Абонементы.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.Абонементы.Form.ФормаЭлемента</defaultObjectForm>
+  <attributes uuid="d62dd1b3-f88e-4a0f-b4c8-273c7d30b931">
+    <name>Описание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Описание</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="a2bd0e64-af08-4902-b93b-aa11905a51aa">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DocumentJournal xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="393729c7-5bc2-4d59-a434-e19fcb40e067">
+  <producedTypes>
+    <selectionType typeId="e74f778b-3974-4f46-8dd7-ad9057d650a8" valueTypeId="7ecbd2a6-3385-40a8-963c-bb294d2a1a52"/>
+    <listType typeId="ec12e65f-adbb-4439-9332-99c4a2fff5c9" valueTypeId="11b4a1c0-5625-4383-a3c3-d710dd542f3a"/>
+    <managerType typeId="0dccee42-abf4-49f8-90f6-6e97a061df35" valueTypeId="a8175a22-c6cb-44e3-a94f-5aee719470c0"/>
+  </producedTypes>
+  <name>УчетУслугИАбонементов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Учет услуг и абонементов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <registeredDocuments>Document.РеализацияУслуг</registeredDocuments>
+  <registeredDocuments>Document.РеализацияАбонементов</registeredDocuments>
+  <columns uuid="69de43f6-79cf-487b-9c43-eb5cc9561687">
+    <name>Клиенты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Клиенты</value>
+    </synonym>
+    <references>Document.РеализацияУслуг.Attribute.Клиент</references>
+    <references>Document.РеализацияАбонементов.Attribute.Клиент</references>
+  </columns>
+</mdclass:DocumentJournal>
