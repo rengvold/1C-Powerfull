@@ -470,6 +470,36 @@
     <autoCommandBar>
       <name>ПоставкаТоваровКоманднаяПанель</name>
       <id>18</id>
+      <items xsi:type="form:Button">
+        <name>ФормаЗагрузитьXLSX</name>
+        <id>59</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>ФормаЗагрузитьXLSXРасширеннаяПодсказка</name>
+          <id>60</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <commandName>Form.Command.ЗагрузитьXLSX</commandName>
+        <representation>Auto</representation>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <placementArea>UserCmds</placementArea>
+        <representationInContextMenu>Auto</representationInContextMenu>
+      </items>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
@@ -963,6 +993,23 @@
     <main>true</main>
     <savedData>true</savedData>
   </attributes>
+  <formCommands>
+    <name>ЗагрузитьXLSX</name>
+    <title>
+      <key>ru</key>
+      <value>Загрузить XLSX</value>
+    </title>
+    <id>1</id>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>ЗагрузитьXLSX</name>
+      </handler>
+    </action>
+    <currentRowUse>Auto</currentRowUse>
+  </formCommands>
   <commandInterface>
     <navigationPanel>
       <cmiFragmentRecord>

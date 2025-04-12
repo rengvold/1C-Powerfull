@@ -6,4 +6,5 @@
     <value>Работа с документами</value>
   </synonym>
   <clientManagedApplication>true</clientManagedApplication>
+  <server>true</server>
 </mdclass:CommonModule>
