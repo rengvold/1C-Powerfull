@@ -16,7 +16,6 @@
   <content>DataProcessor.РасчетСебестоимостиТоваров</content>
   <content>DataProcessor.ПрочитатьCSV</content>
   <content>DataProcessor.ВыгрузкаФото</content>
-  <content>DataProcessor.РаботаСXSLX</content>
   <subsystems>СписокПользователейИБ</subsystems>
   <subsystems>НСИ</subsystems>
 </mdclass:Subsystem>
